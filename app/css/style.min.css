@@ -1,0 +1,616 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.footer__nav .nav-item::after, .header__nav .nav-item::after {
+  position: absolute;
+  content: "";
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Regular.woff2), url(../fonts/Raleway/Raleway-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Medium.woff2), url(../fonts/Raleway/Raleway-Medium.woff);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Bold.woff2), url(../fonts/Raleway/Raleway-Bold.woff);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url(../fonts/Cormorant_Infant/CormorantInfant-Regular.woff2), url(../fonts/Cormorant_Infant/CormorantInfant-Regular.woff);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url(../fonts/Cormorant_Infant/CormorantInfant-Medium.woff2), url(../fonts/Cormorant_Infant/CormorantInfant-Medium.woff);
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant Infant";
+  src: url(../fonts/Cormorant_Infant/CormorantInfant-Bold.woff2), url(../fonts/Cormorant_Infant/CormorantInfant-Medium.woff);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  color: #195557;
+  -webkit-font-feature-settings: "tnum";
+          font-feature-settings: "tnum";
+  font-variant-numeric: lining-nums;
+  -webkit-font-feature-settings: "lnum";
+          font-feature-settings: "lnum";
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.header {
+  background-image: url(../img/content/header-bg.jpg);
+}
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.header__logo {
+  position: absolute;
+  left: 60px;
+  top: 35px;
+}
+.header__logo svg {
+  width: 120px;
+  height: 56px;
+  fill: #195557;
+}
+.header__nav {
+  margin-right: 132px;
+  margin-top: 69px;
+}
+.header__nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__nav .nav-item {
+  position: relative;
+  margin-right: 88px;
+}
+.header__nav .nav-item:last-child {
+  margin-right: 0;
+}
+.header__nav .nav-item::after {
+  background: #195557;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.header__nav .nav-item:hover::after {
+  width: 100%;
+}
+.header__nav a {
+  font-family: "Cormorant Infant", serif;
+  color: #195557;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.header .phone {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 6px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 80px;
+  margin-top: 48px;
+}
+.header .phone__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 69px;
+  height: 69px;
+  margin-right: 20px;
+  border-radius: 100%;
+  background: -o-linear-gradient(88.64deg, #b0d3ce 12.29%, #ffedce 83.89%);
+  background: linear-gradient(1.36deg, #b0d3ce 12.29%, #ffedce 83.89%);
+}
+.header .phone__link svg {
+  width: 26px;
+  height: 26px;
+}
+.header .basket {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 33px;
+  background-image: url(../img/svg/basket.svg);
+  margin-right: 69px;
+  margin-top: 64px;
+}
+.header .basket__count {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 19px;
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  background-color: #FFEDCD;
+}
+.header__title {
+  display: none;
+}
+.header__title-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 173px;
+}
+.header__subtitle {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  text-transform: uppercase;
+  color: #70908b;
+  margin-top: 20px;
+  text-align: center;
+}
+.header__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #70908b;
+  margin-top: 18px;
+  text-align: center;
+}
+.header__btn-wrapper {
+  text-align: center;
+  margin-top: 34px;
+}
+.header__buy-btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 27px 117px;
+  background: #70908B;
+  border-radius: 40px;
+}
+.header .img-left {
+  position: absolute;
+  left: 0;
+  width: 459px;
+  top: 538px;
+}
+.header .img-right {
+  position: absolute;
+  right: 0;
+  width: 435px;
+  top: 731px;
+}
+
+.footer {
+  max-width: 1920px;
+  width: 100%;
+  height: 184px;
+  background: #70908B;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  padding-bottom: 12px;
+}
+.footer__logo {
+  position: absolute;
+  top: 49px;
+  left: 60px;
+}
+.footer__logo svg {
+  fill: #ffffff;
+  width: 120px;
+  height: 57px;
+}
+.footer__nav {
+  margin-right: 104px;
+}
+.footer__nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__nav .nav-item {
+  position: relative;
+  margin-right: 88px;
+}
+.footer__nav .nav-item:last-child {
+  margin-right: 0;
+}
+.footer__nav .nav-item::after {
+  background: #ffffff;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.footer__nav .nav-item:hover::after {
+  width: 100%;
+}
+.footer__nav .nav-link {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer__phone {
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 76px;
+  width: 136px;
+}
+.footer__social-item svg {
+  width: 30px;
+  height: 30px;
+}
+.footer .copyright {
+  position: absolute;
+  left: 61px;
+  bottom: 30px;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 131.4%;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 127px;
+}
+.info__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 882px;
+  width: 100%;
+}
+.info__img-wrapper {
+  width: 152px;
+  height: 152px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info__item {
+  width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.info__item p {
+  text-align: center;
+}
+.info__item:nth-child(1) {
+  margin-top: 23px;
+}
+.info__item:nth-child(1) .info__img-wrapper {
+  background: #FFEDCD;
+}
+.info__item:nth-child(1) svg {
+  width: 72px;
+  height: 72px;
+}
+.info__item:nth-child(2) .info__img-wrapper {
+  background: #E2F0DF;
+}
+.info__item:nth-child(2) svg {
+  width: 46px;
+  height: 46px;
+}
+.info__item:nth-child(3) {
+  margin-top: 23px;
+}
+.info__item:nth-child(3) .info__img-wrapper {
+  background: #70908B;
+}
+.info__item:nth-child(3) svg {
+  width: 43px;
+  height: 43px;
+}
+.info__item .info__img-wrapper {
+  margin-bottom: 30px;
+}
+.info__item .info__title {
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.info__item .info__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+@supports (-webkit-appearance:none){
+.header{background-image:url(../img/content/header-bg.webp)}
+.header .basket{background-image:url(../img/svg/basket.svg)}
+}
