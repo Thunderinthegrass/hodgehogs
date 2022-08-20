@@ -13,6 +13,30 @@ $(document).ready(function(){
   });
 });
 
+function addInfo() {
+  const accordion = document.querySelectorAll(".card");
+  let allInfo = document.querySelectorAll('.add-info');
+  let body = document.querySelector('body');
+
+  accordion.forEach((elem) => {
+    const self = elem.querySelector('.add-info');
+    let addInfoBtn = elem.querySelector('.add-info-btn');
+
+    addInfoBtn.addEventListener("click", (e) => {
+      if (self.classList.contains('active')) {
+        self.classList.remove("active");
+      }
+      else {
+        allInfo.forEach((item) => {
+        item.classList.remove('active');
+      })
+        self.classList.add('active');
+      }
+    });
+  });
+}
+addInfo();
+
 // function mobileMenu() {
 //   let menu = document.querySelector(".mobile-menu");
 //   let menuBtn = document.querySelector(".mobile-menu__btn");

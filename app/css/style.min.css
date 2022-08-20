@@ -635,24 +635,18 @@ body {
 .slider .card:last-child {
   margin-right: 0;
 }
-.slider .card__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-.slider .card__wrapper:nth-child(2n) .card {
-  background: #70908B;
+.slider .card:nth-child(2n) {
+  background: #E2F0DF;
 }
 .slider .card__title {
+  display: inline-block;
   font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
   margin-bottom: 13px;
+  color: #195557;
 }
 .slider .card__descr {
   font-weight: 400;
@@ -705,16 +699,102 @@ body {
   height: 36px;
   background: #70908B;
 }
-.slider .card .add-info {
+.slider .card .add-info-btn {
   width: 36px;
   height: 36px;
   position: absolute;
   top: 21px;
   right: 30px;
 }
-.slider .card .add-info svg {
+.slider .card .add-info-btn svg {
   width: 36px;
   height: 36px;
+}
+.slider .card .add-info {
+  position: absolute;
+  top: 63px;
+  right: -8px;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 88px;
+  background: #195557;
+  color: #ffffff;
+  -webkit-clip-path: polygon(75% 0%, 80% 9%, 100% 9%, 100% 100%, 0 100%, 0 9%, 70% 9%);
+          clip-path: polygon(75% 0%, 80% 9%, 100% 9%, 100% 100%, 0 100%, 0 9%, 70% 9%);
+  padding-left: 28px;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+}
+.slider .card .add-info.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: add-info 0.2s linear forwards;
+          animation: add-info 0.2s linear forwards;
+}
+@-webkit-keyframes add-info {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes add-info {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slider .card .add-info__row {
+  position: relative;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider .card .add-info svg {
+  fill: #ffffff;
+}
+.slider .card .add-info .graft {
+  width: 22px;
+  height: 21px;
+  -webkit-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+          transform: translateY(-1px);
+  margin-right: 7px;
+}
+.slider .card .add-info .is-graft {
+  margin-right: 32px;
+}
+.slider .card .add-info .like {
+  width: 21px;
+  height: 19px;
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
+  margin-right: 7px;
+}
+.slider .card .add-info .like-btn {
+  cursor: pointer;
+}
+.slider .card .add-info span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: lowercase;
 }
 .slider .card__img {
   position: absolute;
@@ -728,7 +808,7 @@ body {
   background: rgb(255, 255, 255);
   -webkit-clip-path: polygon(100% 0%, 10% 100%, 100% 100%);
           clip-path: polygon(100% 0%, 10% 100%, 100% 100%);
-  right: 0;
+  right: -1px;
   bottom: 0;
   cursor: pointer;
 }
@@ -753,6 +833,11 @@ body {
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
   cursor: pointer;
+}
+
+.checkbox-label {
+  height: 100px;
+  width: 100px;
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/content/header-bg.webp)}

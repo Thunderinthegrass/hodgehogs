@@ -4,8 +4,9 @@
   margin: 0 auto;
   position: relative;
   padding-top: 83px;
-  .draggable{
+  .draggable {
     padding-top: 10px;
+    // overflow: visible;
   }
   .card {
     position: relative;
@@ -16,26 +17,22 @@
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 46px;
-    overflow: visible!important;
-    &:last-child{
+    overflow: visible !important;
+    &:last-child {
       margin-right: 0;
     }
-    &__wrapper{
-      display: flex;
-      justify-content: start;
-      &:nth-child(2n){
-        .card{
-          background: $jupiter;
-        }
-      }
+    &:nth-child(2n) {
+      background: $zanah;
     }
     &__title {
+      display: inline-block;
       font-family: "Cormorant Infant";
       font-style: normal;
       font-weight: 700;
       font-size: 40px;
       line-height: 48px;
       margin-bottom: 13px;
+      color: $text-color;
     }
     &__descr {
       font-weight: 400;
@@ -81,32 +78,102 @@
       height: 36px;
       background: $jupiter;
     }
-    .add-info{
+    .add-info-btn {
       width: 36px;
       height: 36px;
       position: absolute;
       top: 21px;
       right: 30px;
-      svg{
+      svg {
         width: 36px;
         height: 36px;
       }
     }
-    &__img{
+    .add-info {
+      position: absolute;
+      top: 63px;
+      right: -8px;
+      overflow: visible;
+      display: flex;
+      align-items: center;
+      width: 220px;
+      height: 88px;
+      background: $text-color;
+      color: #ffffff;
+      clip-path: polygon(
+        75% 0%,
+        80% 9%,
+        100% 9%,
+        100% 100%,
+        0 100%,
+        0 9%,
+        70% 9%
+      );
+      padding-left: 28px;
+      z-index: 10;
+      opacity: 0;
+      display: none;
+      &.active {
+        display: flex;
+        animation: add-info 0.2s linear forwards;
+      }
+      @keyframes add-info {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      &__row {
+        position: relative;
+        height: 35px;
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        fill: #ffffff;
+      }
+      .graft {
+        width: 22px;
+        height: 21px;
+        transform: translateY(-1px);
+        margin-right: 7px;
+      }
+      .is-graft {
+        margin-right: 32px;
+      }
+      .like {
+        width: 21px;
+        height: 19px;
+        transform: translateY(1px);
+        margin-right: 7px;
+        &-btn {
+          cursor: pointer;
+        }
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: lowercase;
+      }
+    }
+    &__img {
       position: absolute;
       right: 5px;
       bottom: 32px;
     }
-    .to-basket-btn{
+    .to-basket-btn {
       position: absolute;
       width: 90px;
       height: 83px;
       background: rgb(255, 255, 255);
       clip-path: polygon(100% 0%, 10% 100%, 100% 100%);
-      right: 0;
+      right: -1px;
       bottom: 0;
       cursor: pointer;
-      svg{
+      svg {
         position: absolute;
         right: 6px;
         bottom: 6px;
