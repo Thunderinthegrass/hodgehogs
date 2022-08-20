@@ -1,0 +1,131 @@
+.slider {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 83px;
+  .draggable{
+    padding-top: 10px;
+  }
+  .card {
+    position: relative;
+    background: $sandy-beach;
+    padding-top: 54px;
+    padding-left: 59px;
+    border-radius: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 46px;
+    overflow: visible!important;
+    &:last-child{
+      margin-right: 0;
+    }
+    &__wrapper{
+      display: flex;
+      justify-content: start;
+      &:nth-child(2n){
+        .card{
+          background: $jupiter;
+        }
+      }
+    }
+    &__title {
+      font-family: "Cormorant Infant";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 13px;
+    }
+    &__descr {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #000000;
+      width: 182px;
+      height: 120px;
+    }
+    &__price {
+      display: block;
+      font-family: "Cormorant Infant";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      &_old {
+        display: block;
+        font-family: "Cormorant Infant";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration-line: line-through;
+        color: #c2ccca;
+        margin-bottom: -4px;
+      }
+    }
+    &__sale {
+      position: absolute;
+      top: -7px;
+      left: 62px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: #ffffff;
+      width: 66px;
+      height: 36px;
+      background: $jupiter;
+    }
+    .add-info{
+      width: 36px;
+      height: 36px;
+      position: absolute;
+      top: 21px;
+      right: 30px;
+      svg{
+        width: 36px;
+        height: 36px;
+      }
+    }
+    &__img{
+      position: absolute;
+      right: 5px;
+      bottom: 32px;
+    }
+    .to-basket-btn{
+      position: absolute;
+      width: 90px;
+      height: 83px;
+      background: rgb(255, 255, 255);
+      clip-path: polygon(100% 0%, 10% 100%, 100% 100%);
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+      svg{
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+  .arrow-left {
+    position: absolute;
+    bottom: 181px;
+    left: -39px;
+    cursor: pointer;
+  }
+  .arrow-right {
+    position: absolute;
+    bottom: 181px;
+    right: -39px;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
