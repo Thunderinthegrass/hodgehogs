@@ -4,6 +4,7 @@
   margin: 0 auto;
   position: relative;
   padding-top: 83px;
+  z-index: 2;
   .draggable {
     padding-top: 10px;
     // overflow: visible;
@@ -84,6 +85,7 @@
       position: absolute;
       top: 21px;
       right: 30px;
+      cursor: pointer;
       svg {
         width: 36px;
         height: 36px;
