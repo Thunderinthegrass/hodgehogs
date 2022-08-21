@@ -15,6 +15,15 @@
 
   <body>
     <header class="header">
+      <div class="circle-left">
+        
+      </div>
+      <div class="circle-right">
+
+      </div>
+      <div class="circle-bottom">
+        
+      </div>
       <div class="container">
         <div class="header__top">
           <a href="#" class="header__logo logo">
@@ -58,7 +67,12 @@
           царапать вашу мебель.
         </p>
         <div class="header__btn-wrapper">
-          <a href="#" class="header__buy-btn">Купить ёжика</a>
+          <div class="hover-mask">
+            Купить ёжика
+          </div>
+          <a href="#" class="header__buy-btn">
+            Купить ёжика
+          </a>
         </div>
       </div>
       <div class="info">
@@ -302,9 +316,7 @@
                 </label>
                 <input class="kids" type="checkbox" id="for-kids" />
                 <label
-                  class="checkbox-label checkbox-label_kids"
-                  for="for-kids"
-                >
+                  class="checkbox-label checkbox-label_kids" for="for-kids">
                   хочу ёжика для детей
                 </label>
                 <input class="breeding" type="checkbox" id="for-breeding" />
@@ -317,13 +329,7 @@
               </div>
               <div class="form__radio-wrapper">
                 <div class="radio-row radio-row-top">
-                  <input
-                    class="amount"
-                    type="radio"
-                    name="amount"
-                    id="1-2"
-                    checked
-                  />
+                  <input class="amount" type="radio" name="amount" id="1-2" checked/>
                   <label class="radio-label" for="1-2">
                     Мне нужен 1-2 ёжика
                   </label>
@@ -337,12 +343,7 @@
                   <label class="radio-label" for="3-4">
                     Мне нужны 3-4 ёжика
                   </label>
-                  <input
-                    class="amount"
-                    type="radio"
-                    name="amount"
-                    id="uncnown"
-                  />
+                  <input class="amount" type="radio" name="amount" id="uncnown"/>
                   <label class="radio-label" for="uncnown">
                     Пока присматриваюсь
                   </label>
@@ -351,16 +352,33 @@
             </div>
             <div class="form__bottom">
               <div class="form__bottom-inputs">
-                <input type="text" class="name" placeholder="Ваше имя"/>
-                <input type="tel" class="phone" placeholder="Ваш телефон"/>
-                <input type="email" class="email" placeholder="Ваш email"/>
+                <input type="text" class="name" placeholder="Ваше имя" />
+                <input type="tel" class="phone" placeholder="Ваш телефон" />
+                <input type="email" class="email" placeholder="Ваш email" />
               </div>
-              <textarea name="" id="" class="textarea"> </textarea>
-              <div class="form__btn">Купить ёжика</div>
+              <textarea name="" id="" class="textarea" placeholder="Комментарий к заявке">
+
+              </textarea>
+              <div class="form__btn-wrapper">
+                <div class="hover-mask">
+                  Купить ёжика
+                </div>
+                <div class="form__btn"><span>Купить ёжика</span></div>
+              </div>
             </div>
           </form>
         </div>
       </section>
+      <div class="stock">
+        <div class="container">
+          <p class="reminder">
+            У нас осталось ещё: <span><span class="count">25</span>ёжиков</span>
+          </p>
+          <p class="stock__duration">
+            Торопитесь! Акция <br> действует до <span>26. 02. 2023</span>
+          </p>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <a href="#" class="footer__logo logo">

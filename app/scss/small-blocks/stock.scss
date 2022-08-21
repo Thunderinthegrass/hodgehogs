@@ -1,0 +1,34 @@
+.stock {
+  margin-bottom: 63px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reminder {
+    position: relative;
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    padding-left: 38px;
+    margin-bottom: 30px;
+    &::before {
+      @extend %ba;
+      background-image: url(../img/svg/reminder-icon.svg);
+      width: 41px;
+      height: 41px;
+      left: -10px;
+      top: -8px;
+    }
+  }
+  &__duration {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+}

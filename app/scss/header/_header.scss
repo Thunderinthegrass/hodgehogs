@@ -1,5 +1,41 @@
 .header {
-  background-image: url(../img/content/header-bg.jpg);
+  position: relative;
+  background: #eaeeef;
+  .circle-left {
+    position: absolute;
+    width: 1048px;
+    height: 1048px;
+    left: -533px;
+    top: -474px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(180, 197, 194, 0.83) 0%,
+      rgba(224, 225, 225, 0) 100%
+    );
+  }
+  .circle-right {
+    position: absolute;
+    width: 1582px;
+    height: 1582px;
+    left: 1028px;
+    top: -73px;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 238, 206, 0.49) 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+  }
+  .circle-bottom {
+    position: absolute;
+    width: 140%;
+    height: 1270px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -1079px;
+    border-radius: 100%;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  }
   &__top {
     display: flex;
     justify-content: end;
@@ -68,6 +104,7 @@
       margin-right: 20px;
       border-radius: 100%;
       background: linear-gradient(1.36deg, #b0d3ce 12.29%, #ffedce 83.89%);
+      box-shadow: -4px -4px 20px #ffffff, 4px 4px 20px #cfd7d3;
       svg {
         width: 26px;
         height: 26px;
@@ -126,11 +163,17 @@
     margin-top: 18px;
     text-align: center;
   }
-  &__btn-wrapper{
+  &__btn-wrapper {
     text-align: center;
     margin-top: 34px;
+    position: relative;
+    height: 70px;
   }
   &__buy-btn {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
     display: inline-block;
     font-weight: 700;
     font-size: 14px;
@@ -139,14 +182,34 @@
     padding: 27px 117px;
     background: $jupiter;
     border-radius: 40px;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0;
+    }
   }
-  .img-left{
+  .hover-mask {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+    padding: 27px 117px;
+    border-radius: 40px;
+    background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+  }
+  .img-left {
     position: absolute;
     left: 0;
     width: 459px;
     top: 538px;
   }
-  .img-right{
+  .img-right {
     position: absolute;
     right: 0;
     width: 435px;
