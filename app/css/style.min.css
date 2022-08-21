@@ -89,7 +89,7 @@
   display: none;
 }
 
-.footer__nav .nav-item::after, .header__nav .nav-item::after {
+.form .radio-label::after, .form .radio-label::before, .footer__nav .nav-item::after, .header__nav .nav-item::after {
   position: absolute;
   content: "";
 }
@@ -835,9 +835,186 @@ body {
   cursor: pointer;
 }
 
-.checkbox-label {
-  height: 100px;
-  width: 100px;
+.form {
+  max-width: 1197px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #eaeeef;
+  padding: 40px 50px 80px;
+}
+.form-wrapper {
+  padding-top: 90px;
+}
+.form__title {
+  font-family: "Cormorant Infant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+}
+.form__top {
+  margin-top: 28px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__checkbox-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 76px;
+}
+.form .checkbox-label {
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: 2px solid #70908b;
+  background: rgb(255, 255, 255);
+  border-radius: 61px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.form .checkbox-label_myself {
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-right: 14px;
+}
+.form .checkbox-label_kids {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 14px;
+}
+.form .checkbox-label_breeding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form .myself {
+  display: none;
+}
+.form .myself:checked + .checkbox-label_myself {
+  background: #70908b;
+}
+.form .kids {
+  display: none;
+}
+.form .kids:checked + .checkbox-label_kids {
+  background: #70908b;
+}
+.form .breeding {
+  display: none;
+}
+.form .breeding:checked + .checkbox-label_breeding {
+  background: #70908b;
+}
+.form__radio-wrapper .radio-row-top {
+  margin-bottom: 12px;
+}
+.form__radio-wrapper .radio-row-top label {
+  margin-right: 50px;
+}
+.form__radio-wrapper .radio-row-top label:last-child {
+  margin-right: 0;
+}
+.form__radio-wrapper .radio-row-bottom label {
+  margin-right: 47px;
+}
+.form__radio-wrapper .radio-row-bottom label:last-child {
+  margin-right: 0;
+}
+.form .amount {
+  display: none;
+}
+.form .amount:checked + .radio-label::after {
+  opacity: 1;
+}
+.form .radio-label {
+  position: relative;
+  padding-left: 21px;
+  font-family: "Cormorant Infant";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #70908b;
+}
+.form .radio-label::before {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border: 1px solid #70908b;
+  border-radius: 100%;
+}
+.form .radio-label::after {
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #70908b;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.form__bottom-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form__bottom input {
+  background: #f8f8f8;
+  border-radius: 8px;
+  outline: none;
+  height: 62px;
+  width: 352px;
+  padding-left: 27px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #195557;
+}
+.form__bottom input::-webkit-input-placeholder {
+  color: #195557;
+}
+.form__bottom input::-moz-placeholder {
+  color: #195557;
+}
+.form__bottom input:-ms-input-placeholder {
+  color: #195557;
+}
+.form__bottom input::-ms-input-placeholder {
+  color: #195557;
+}
+.form__bottom input::placeholder {
+  color: #195557;
+}
+.form__bottom .textarea {
+  width: 1096px;
+  height: 108px;
+  background: #f8f8f8;
+  border-radius: 8px;
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/content/header-bg.webp)}
