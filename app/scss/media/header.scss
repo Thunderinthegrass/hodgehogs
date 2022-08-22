@@ -36,7 +36,8 @@
       padding-top: 100px;
     }
     .circle-bottom {
-      display: none;
+      box-shadow: none;
+      width: 240%;
     }
   }
   @media (max-width: 1030px) {
@@ -51,6 +52,9 @@
     &__subtitle {
       font-size: 42px;
       line-height: 50px;
+    }
+    .info__inner{
+      flex-wrap: wrap;
     }
   }
   @media (max-width: 850px) {
@@ -100,13 +104,26 @@
     }
     .basket {
       margin-top: 26px;
-      width: 32px;
-      svg{
-        width: 32px;
+      width: 26px;
+      height: 23px;
+      background-size: contain;
+      &__count{
+        width: 14px;
+        height: 14px;
+        line-height: 14px;
+        right: -5px;
       }
     }
     &__nav {
       display: none;
+    }
+    &__title-img {
+      margin-top: 90px;
+      width: 250px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      line-height: 30px;
     }
   }
 }
