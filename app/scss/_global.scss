@@ -4,16 +4,13 @@
 html,
 body {
   font-family: "Raleway", sans-serif;
-  // font-family: 'Cormorant Infant', serif;
   color: $text-color;
   font-feature-settings: "tnum";
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum";
 }
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  overflow: hidden;
 }
 
 .main {

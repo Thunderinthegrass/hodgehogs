@@ -42,12 +42,31 @@ function accordions() {
   const btn = document.querySelector(".dropdown-btn");
   const dropdown = document.querySelector(".dropdown");
 
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
     btn.classList.toggle('open');
     dropdown.classList.toggle('open');
+
+    console.log(e.target)
   })
+
+  
 }
 accordions();
+
+function mobileMenu() {
+  let menu = document.querySelector(".header__nav_mobile");
+  let menuBtn = document.querySelector(".mobile-menu-btn");
+  let btnClose = document.querySelector(".close-btn");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add("open");
+  });
+
+  btnClose.addEventListener("click", () => {
+    menu.classList.remove("open");
+  });
+}
+mobileMenu();
 
 // function accordions() {
 //   const accordion = document.querySelectorAll(".dropdown-btn");

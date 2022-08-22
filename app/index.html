@@ -14,436 +14,485 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="circle-left">
-        
-      </div>
-      <div class="circle-right">
-
-      </div>
-      <div class="circle-bottom">
-        
-      </div>
-      <div class="container">
-        <div class="header__top">
-          <a href="#" class="header__logo logo">
-            <svg>
-              <use xlink:href="img/sprite/sprite.svg#logo"></use>
-            </svg>
-          </a>
-          <nav class="header__nav">
-            <ul class="nav-list">
-              <li class="nav-item dropdown-btn">
-                <a href="#" class="header__nav-link">Каталог</a>
-                <div class="header__dropdown dropdown">
-                  <ul class="dropdown__list">
-                    <div class="dropdown__item">
-                      <a href="#" class="dropdown__link">Ёжики</a>
-                    </div>
-                    <div class="dropdown__item">
-                      <a href="#" class="dropdown__link">Питание</a>
-                    </div>
-                    <div class="dropdown__item">
-                      <a href="#" class="dropdown__link">Переноски</a>
-                    </div>
-                    <div class="dropdown__item">
-                      <a href="#" class="dropdown__link">Лекарства</a>
-                    </div>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="header__nav-link">О нас</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="header__nav-link">Магазины</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="header__nav-link">Галерея</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__phone phone">
-            <a href="tel:+79655698998" class="phone__link">
+    <div class="wrapper">
+      <header class="header">
+        <div class="circle-left"></div>
+        <div class="circle-bottom"></div>
+        <div class="container">
+          <div class="header__top">
+            <a href="#" class="header__logo logo">
               <svg>
-                <use xlink:href="img/sprite/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite/sprite.svg#logo"></use>
               </svg>
             </a>
-            <p>+7 (965) 569-89-98</p>
-          </div>
-          <a href="#" class="header__basket basket">
-            <span class="basket__count">1</span>
-          </a>
-        </div>
-        <img class="header__title-img" src="img/svg/title.svg" alt="Ёжики" />
-        <h2 class="header__title">Ёжики</h2>
-        <p class="header__subtitle">тоже любят молоко</p>
-        <p class="header__text">
-          Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и
-          царапать вашу мебель.
-        </p>
-        <div class="header__btn-wrapper">
-          <div class="hover-mask">
-            Купить ёжика
-          </div>
-          <a href="#" class="header__buy-btn">
-            Купить ёжика
-          </a>
-        </div>
-      </div>
-      <div class="info">
-        <div class="info__inner">
-          <div class="info__item">
-            <div class="info__img-wrapper">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#info-1"></use>
-                /
-              </svg>
+            <nav class="header__nav">
+              <ul class="nav-list">
+                <li class="nav-item dropdown-btn">
+                  <a href="#" class="header__nav-link">Каталог</a>
+                  <div class="header__dropdown dropdown">
+                    <ul class="dropdown__list">
+                      <div class="dropdown__item">
+                        <a href="#" class="dropdown__link">Ёжики</a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a href="#" class="dropdown__link">Питание</a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a href="#" class="dropdown__link">Переноски</a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a href="#" class="dropdown__link">Лекарства</a>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">Магазины</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">Галерея</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </button>
+            <nav class="header__nav_mobile">
+              <div class="header__nav_mobile-top">
+                <button class="close-btn">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#close-btn"></use>
+                  </svg>
+                </button>
+                <a href="#" class="logo">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">Каталог</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="header__nav-link">Галерея</a>
+                </li>
+              </ul>
+              <div class="mobile-phone">
+                <a href="tel:+79655698998">+7 (965) 569-89-98</a>
+              </div>
+            </nav>
+            <div class="header__phone phone">
+              <a href="tel:+79655698998" class="phone__link">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#phone"></use>
+                </svg>
+              </a>
+              <p>+7 (965) 569-89-98</p>
             </div>
-            <p class="info__title">Разведение ежиков</p>
-            <p class="info__text">Собственная ферма, уход и содержание</p>
+            <a href="#" class="header__basket basket">
+              <span class="basket__count">1</span>
+            </a>
           </div>
-          <div class="info__item">
-            <div class="info__img-wrapper">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#info-2"></use>
-                /
-              </svg>
+          <img class="header__title-img" src="img/svg/title.svg" alt="Ёжики" />
+          <h2 class="header__title">Ёжики</h2>
+          <p class="header__subtitle">тоже любят молоко</p>
+          <p class="header__text">
+            Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра
+            и царапать вашу мебель.
+          </p>
+          <div class="header__btn-wrapper">
+            <div class="hover-mask">Купить ёжика</div>
+            <a href="#" class="header__buy-btn"> Купить ёжика </a>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info__inner">
+            <div class="info__item">
+              <div class="info__img-wrapper">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#info-1"></use>
+                  /
+                </svg>
+              </div>
+              <p class="info__title">Разведение ежиков</p>
+              <p class="info__text">Собственная ферма, уход и содержание</p>
             </div>
-            <p class="info__title">Здоровье</p>
-            <p class="info__text">
-              Всегда прививаем и вовремя обследуем ваших будущих питомцев
+            <div class="info__item">
+              <div class="info__img-wrapper">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#info-2"></use>
+                  /
+                </svg>
+              </div>
+              <p class="info__title">Здоровье</p>
+              <p class="info__text">
+                Всегда прививаем и вовремя обследуем ваших будущих питомцев
+              </p>
+            </div>
+            <div class="info__item">
+              <div class="info__img-wrapper">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#info-3"></use>
+                  /
+                </svg>
+              </div>
+              <p class="info__title">Любовь и забота</p>
+              <p class="info__text">Каждому ежику мы дарим много внимания</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- <main class="main">
+        <div class="container">
+          <img
+            class="img-left"
+            src="img/content/header-left-img.png"
+            alt="Ёжик"
+          />
+          <img
+            class="img-right"
+            src="img/content/header-right-img.png"
+            alt="Ёжик"
+          />
+          <div class="circle-right"></div>
+          <div class="slider">
+            <div class="card">
+              <div class="card__info">
+                <a href="#" class="card__title">
+                  Ежик <br />
+                  "Евгений"
+                </a>
+                <p class="card__descr">
+                  Очень любит сладости. Маленький сладкоежка=) Мы называем его
+                  так между собой. Ручной, любит внимаение
+                </p>
+                <div class="card__price-wrapper">
+                  <sapn class="card__price_old">3000 &#8381;</sapn>
+                  <span class="card__price">1 500 &#8381;</span>
+                </div>
+                <span class="card__sale">-50 %</span>
+                <button class="add-info-btn">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#add-info"></use>
+                  </svg>
+                </button>
+                <div class="add-info">
+                  <div class="add-info__row">
+                    <svg class="graft">
+                      <use xlink:href="img/sprite/sprite.svg#info-2"></use>
+                    </svg>
+                    <span class="is-graft">привит</span>
+                    <button class="like-btn">
+                      <svg class="like">
+                        <use xlink:href="img/sprite/sprite.svg#info-3"></use>
+                      </svg>
+                    </button>
+                    <span class="like-count">1235</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card__img">
+                <img src="img/png/card-1.png" alt="" />
+              </a>
+              <button class="to-basket-btn">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="card__info">
+                <a href="#" class="card__title">
+                  Ежик <br />
+                  "Максим"
+                </a>
+                <p class="card__descr">
+                  Немного игривый и задорный характер этого друга никого не
+                  оставит равнодушным!
+                </p>
+                <div class="card__price-wrapper">
+                  <sapn class="card__price_old">5 000 &#8381;</sapn>
+                  <span class="card__price">2 500 &#8381;</span>
+                </div>
+                <span class="card__sale">-50 %</span>
+                <button class="add-info-btn">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#add-info"></use>
+                  </svg>
+                </button>
+                <div class="add-info">
+                  <div class="add-info__row">
+                    <svg class="graft">
+                      <use xlink:href="img/sprite/sprite.svg#info-2"></use>
+                    </svg>
+                    <span class="is-graft">привит</span>
+                    <button class="like-btn">
+                      <svg class="like">
+                        <use xlink:href="img/sprite/sprite.svg#info-3"></use>
+                      </svg>
+                    </button>
+                    <span class="like-count">1235</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card__img">
+                <img src="img/png/card-2.png" alt="" />
+              </a>
+              <button class="to-basket-btn">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="card__info">
+                <a href="#" class="card__title">
+                  Ежик <br />
+                  "Евгений"
+                </a>
+                <p class="card__descr">
+                  Очень любит сладости. Маленький сладкоежка=) Мы называем его
+                  так между собой. Ручной, любит внимаение
+                </p>
+                <div class="card__price-wrapper">
+                  <sapn class="card__price_old">3000 &#8381;</sapn>
+                  <span class="card__price">1 500 &#8381;</span>
+                </div>
+                <span class="card__sale">-50 %</span>
+                <button class="add-info-btn">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#add-info"></use>
+                  </svg>
+                </button>
+                <div class="add-info">
+                  <div class="add-info__row">
+                    <svg class="graft">
+                      <use xlink:href="img/sprite/sprite.svg#info-2"></use>
+                    </svg>
+                    <span class="is-graft">привит</span>
+                    <button class="like-btn">
+                      <svg class="like">
+                        <use xlink:href="img/sprite/sprite.svg#info-3"></use>
+                      </svg>
+                    </button>
+                    <span class="like-count">1235</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card__img">
+                <img src="img/png/card-1.png" alt="" />
+              </a>
+              <button class="to-basket-btn">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="card">
+              <div class="card__info">
+                <a href="#" class="card__title">
+                  Ежик <br />
+                  "Максим"
+                </a>
+                <p class="card__descr">
+                  Немного игривый и задорный характер этого друга никого не
+                  оставит равнодушным!
+                </p>
+                <div class="card__price-wrapper">
+                  <sapn class="card__price_old">5 000 &#8381;</sapn>
+                  <span class="card__price">2 500 &#8381;</span>
+                </div>
+                <span class="card__sale">-50 %</span>
+                <button class="add-info-btn">
+                  <svg>
+                    <use xlink:href="img/sprite/sprite.svg#add-info"></use>
+                  </svg>
+                </button>
+                <div class="add-info">
+                  <div class="add-info__row">
+                    <svg class="graft">
+                      <use xlink:href="img/sprite/sprite.svg#info-2"></use>
+                    </svg>
+                    <span class="is-graft">привит</span>
+                    <button class="like-btn">
+                      <svg class="like">
+                        <use xlink:href="img/sprite/sprite.svg#info-3"></use>
+                      </svg>
+                    </button>
+                    <span class="like-count">1235</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card__img">
+                <img src="img/png/card-2.png" alt="" />
+              </a>
+              <button class="to-basket-btn">
+                <svg>
+                  <use xlink:href="img/sprite/sprite.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="form-wrapper">
+          <div class="container">
+            <form action="" class="form">
+              <h2 class="form__title">
+                Заполните заявку и мы забронируем для Вас нового друга
+              </h2>
+              <div class="form__top">
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" class="myself" id="for-myself" />
+                  <label
+                    class="checkbox-label checkbox-label_myself"
+                    for="for-myself"
+                  >
+                    хочу ёжика для себя
+                  </label>
+                  <input class="kids" type="checkbox" id="for-kids" />
+                  <label
+                    class="checkbox-label checkbox-label_kids"
+                    for="for-kids"
+                  >
+                    хочу ёжика для детей
+                  </label>
+                  <input class="breeding" type="checkbox" id="for-breeding" />
+                  <label
+                    class="checkbox-label checkbox-label_breeding"
+                    for="for-breeding"
+                  >
+                    хочу ёжика для разведения
+                  </label>
+                </div>
+                <div class="form__radio-wrapper">
+                  <div class="radio-row radio-row-top">
+                    <input
+                      class="amount"
+                      type="radio"
+                      name="amount"
+                      id="1-2"
+                      checked
+                    />
+                    <label class="radio-label" for="1-2">
+                      Мне нужен 1-2 ёжика
+                    </label>
+                    <input class="amount" type="radio" name="amount" id="3" />
+                    <label class="radio-label" for="3">
+                      Мне нужны 3 и более ёжиков
+                    </label>
+                  </div>
+                  <div class="radio-row radio-row-bottom">
+                    <input class="amount" type="radio" name="amount" id="3-4" />
+                    <label class="radio-label" for="3-4">
+                      Мне нужны 3-4 ёжика
+                    </label>
+                    <input
+                      class="amount"
+                      type="radio"
+                      name="amount"
+                      id="uncnown"
+                    />
+                    <label class="radio-label" for="uncnown">
+                      Пока присматриваюсь
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form__bottom">
+                <div class="form__bottom-inputs">
+                  <input type="text" class="name" placeholder="Ваше имя" />
+                  <input type="tel" class="phone" placeholder="Ваш телефон" />
+                  <input type="email" class="email" placeholder="Ваш email" />
+                </div>
+                <textarea
+                  name=""
+                  id=""
+                  class="textarea"
+                  placeholder="Комментарий к заявке"
+                >
+                </textarea>
+                <div class="form__btn-wrapper">
+                  <div class="hover-mask">Купить ёжика</div>
+                  <div class="form__btn"><span>Купить ёжика</span></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="stock">
+          <div class="container">
+            <p class="reminder">
+              У нас осталось ещё:
+              <span><span class="count">25</span>ёжиков</span>
+            </p>
+            <p class="stock__duration">
+              Торопитесь! Акция <br />
+              действует до <span>26. 02. 2023</span>
             </p>
           </div>
-          <div class="info__item">
-            <div class="info__img-wrapper">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#info-3"></use>
-                /
-              </svg>
-            </div>
-            <p class="info__title">Любовь и забота</p>
-            <p class="info__text">Каждому ежику мы дарим много внимания</p>
-          </div>
         </div>
-      </div>
-      <img class="img-left" src="img/content/header-left-img.png" alt="Ёжик" />
-      <img
-        class="img-right"
-        src="img/content/header-right-img.png"
-        alt="Ёжик"
-      />
-    </header>
-    <main class="main">
-      <div class="container">
-        <div class="slider">
-          <div class="card">
-            <div class="card__info">
-              <a href="#" class="card__title">
-                Ежик <br />
-                "Евгений"
-              </a>
-              <p class="card__descr">
-                Очень любит сладости. Маленький сладкоежка=) Мы называем его так
-                между собой. Ручной, любит внимаение
-              </p>
-              <div class="card__price-wrapper">
-                <sapn class="card__price_old">3000 &#8381;</sapn>
-                <span class="card__price">1 500 &#8381;</span>
-              </div>
-              <span class="card__sale">-50 %</span>
-              <button class="add-info-btn">
-                <svg>
-                  <use xlink:href="img/sprite/sprite.svg#add-info"></use>
-                </svg>
-              </button>
-              <div class="add-info">
-                <div class="add-info__row">
-                  <svg class="graft">
-                    <use xlink:href="img/sprite/sprite.svg#info-2"></use>
-                  </svg>
-                  <span class="is-graft">привит</span>
-                  <button class="like-btn">
-                    <svg class="like">
-                      <use xlink:href="img/sprite/sprite.svg#info-3"></use>
-                    </svg>
-                  </button>
-                  <span class="like-count">1235</span>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="card__img">
-              <img src="img/png/card-1.png" alt="" />
-            </a>
-            <button class="to-basket-btn">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="card__info">
-              <a href="#" class="card__title">
-                Ежик <br />
-                "Максим"
-              </a>
-              <p class="card__descr">
-                Немного игривый и задорный характер этого друга никого не
-                оставит равнодушным!
-              </p>
-              <div class="card__price-wrapper">
-                <sapn class="card__price_old">5 000 &#8381;</sapn>
-                <span class="card__price">2 500 &#8381;</span>
-              </div>
-              <span class="card__sale">-50 %</span>
-              <button class="add-info-btn">
-                <svg>
-                  <use xlink:href="img/sprite/sprite.svg#add-info"></use>
-                </svg>
-              </button>
-              <div class="add-info">
-                <div class="add-info__row">
-                  <svg class="graft">
-                    <use xlink:href="img/sprite/sprite.svg#info-2"></use>
-                  </svg>
-                  <span class="is-graft">привит</span>
-                  <button class="like-btn">
-                    <svg class="like">
-                      <use xlink:href="img/sprite/sprite.svg#info-3"></use>
-                    </svg>
-                  </button>
-                  <span class="like-count">1235</span>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="card__img">
-              <img src="img/png/card-2.png" alt="" />
-            </a>
-            <button class="to-basket-btn">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="card__info">
-              <a href="#" class="card__title">
-                Ежик <br />
-                "Евгений"
-              </a>
-              <p class="card__descr">
-                Очень любит сладости. Маленький сладкоежка=) Мы называем его так
-                между собой. Ручной, любит внимаение
-              </p>
-              <div class="card__price-wrapper">
-                <sapn class="card__price_old">3000 &#8381;</sapn>
-                <span class="card__price">1 500 &#8381;</span>
-              </div>
-              <span class="card__sale">-50 %</span>
-              <button class="add-info-btn">
-                <svg>
-                  <use xlink:href="img/sprite/sprite.svg#add-info"></use>
-                </svg>
-              </button>
-              <div class="add-info">
-                <div class="add-info__row">
-                  <svg class="graft">
-                    <use xlink:href="img/sprite/sprite.svg#info-2"></use>
-                  </svg>
-                  <span class="is-graft">привит</span>
-                  <button class="like-btn">
-                    <svg class="like">
-                      <use xlink:href="img/sprite/sprite.svg#info-3"></use>
-                    </svg>
-                  </button>
-                  <span class="like-count">1235</span>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="card__img">
-              <img src="img/png/card-1.png" alt="" />
-            </a>
-            <button class="to-basket-btn">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="card">
-            <div class="card__info">
-              <a href="#" class="card__title">
-                Ежик <br />
-                "Максим"
-              </a>
-              <p class="card__descr">
-                Немного игривый и задорный характер этого друга никого не
-                оставит равнодушным!
-              </p>
-              <div class="card__price-wrapper">
-                <sapn class="card__price_old">5 000 &#8381;</sapn>
-                <span class="card__price">2 500 &#8381;</span>
-              </div>
-              <span class="card__sale">-50 %</span>
-              <button class="add-info-btn">
-                <svg>
-                  <use xlink:href="img/sprite/sprite.svg#add-info"></use>
-                </svg>
-              </button>
-              <div class="add-info">
-                <div class="add-info__row">
-                  <svg class="graft">
-                    <use xlink:href="img/sprite/sprite.svg#info-2"></use>
-                  </svg>
-                  <span class="is-graft">привит</span>
-                  <button class="like-btn">
-                    <svg class="like">
-                      <use xlink:href="img/sprite/sprite.svg#info-3"></use>
-                    </svg>
-                  </button>
-                  <span class="like-count">1235</span>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="card__img">
-              <img src="img/png/card-2.png" alt="" />
-            </a>
-            <button class="to-basket-btn">
-              <svg>
-                <use xlink:href="img/sprite/sprite.svg#plus"></use>
-              </svg>
-            </button>
-          </div>
+      </main>
+      <footer class="footer">
+        <a href="#" class="footer__logo logo">
+          <svg>
+            <use xlink:href="img/sprite/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="footer__nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Магазины</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Галерея</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <section class="form-wrapper">
-        <div class="container">
-          <form action="" class="form">
-            <h2 class="form__title">
-              Заполните заявку и мы забронируем для Вас нового друга
-            </h2>
-            <div class="form__top">
-              <div class="form__checkbox-wrapper">
-                <input type="checkbox" class="myself" id="for-myself" />
-                <label
-                  class="checkbox-label checkbox-label_myself"
-                  for="for-myself"
-                >
-                  хочу ёжика для себя
-                </label>
-                <input class="kids" type="checkbox" id="for-kids" />
-                <label
-                  class="checkbox-label checkbox-label_kids" for="for-kids">
-                  хочу ёжика для детей
-                </label>
-                <input class="breeding" type="checkbox" id="for-breeding" />
-                <label
-                  class="checkbox-label checkbox-label_breeding"
-                  for="for-breeding"
-                >
-                  хочу ёжика для разведения
-                </label>
-              </div>
-              <div class="form__radio-wrapper">
-                <div class="radio-row radio-row-top">
-                  <input class="amount" type="radio" name="amount" id="1-2" checked/>
-                  <label class="radio-label" for="1-2">
-                    Мне нужен 1-2 ёжика
-                  </label>
-                  <input class="amount" type="radio" name="amount" id="3" />
-                  <label class="radio-label" for="3">
-                    Мне нужны 3 и более ёжиков
-                  </label>
-                </div>
-                <div class="radio-row radio-row-bottom">
-                  <input class="amount" type="radio" name="amount" id="3-4" />
-                  <label class="radio-label" for="3-4">
-                    Мне нужны 3-4 ёжика
-                  </label>
-                  <input class="amount" type="radio" name="amount" id="uncnown"/>
-                  <label class="radio-label" for="uncnown">
-                    Пока присматриваюсь
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form__bottom">
-              <div class="form__bottom-inputs">
-                <input type="text" class="name" placeholder="Ваше имя" />
-                <input type="tel" class="phone" placeholder="Ваш телефон" />
-                <input type="email" class="email" placeholder="Ваш email" />
-              </div>
-              <textarea name="" id="" class="textarea" placeholder="Комментарий к заявке">
-
-              </textarea>
-              <div class="form__btn-wrapper">
-                <div class="hover-mask">
-                  Купить ёжика
-                </div>
-                <div class="form__btn"><span>Купить ёжика</span></div>
-              </div>
-            </div>
-          </form>
+        <div class="footer__social">
+          <a href="#" class="footer__social-item">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#inst"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-item">
+            <svg>
+              <use xlink:href="img/sprite/sprite.svg#tw"></use>
+            </svg>
+          </a>
         </div>
-      </section>
-      <div class="stock">
-        <div class="container">
-          <p class="reminder">
-            У нас осталось ещё: <span><span class="count">25</span>ёжиков</span>
-          </p>
-          <p class="stock__duration">
-            Торопитесь! Акция <br> действует до <span>26. 02. 2023</span>
+        <a href="tel:+79655698998" class="footer__phone">+7 (965) 569-89-98</a>
+        <div class="copyright">
+          <p>Все права защищены.</p>
+          <p>
+            Указанная стоимость товаров и условия их приобретения действительны
+            на текущую дату.
           </p>
         </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <a href="#" class="footer__logo logo">
-        <svg>
-          <use xlink:href="img/sprite/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <div class="footer__nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">О нас</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Магазины</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Галерея</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__social">
-        <a href="#" class="footer__social-item">
-          <svg>
-            <use xlink:href="img/sprite/sprite.svg#inst"></use>
-          </svg>
-        </a>
-        <a href="#" class="footer__social-item">
-          <svg>
-            <use xlink:href="img/sprite/sprite.svg#fb"></use>
-          </svg>
-        </a>
-        <a href="#" class="footer__social-item">
-          <svg>
-            <use xlink:href="img/sprite/sprite.svg#tw"></use>
-          </svg>
-        </a>
-      </div>
-      <a href="tel:+79655698998" class="footer__phone">+7 (965) 569-89-98</a>
-      <div class="copyright">
-        <p>Все права защищены.</p>
-        <p>
-          Указанная стоимость товаров и условия их приобретения действительны на
-          текущую дату.
-        </p>
-      </div>
-    </footer>
+      </footer> -->
+    </div>
     <script src="js/main.min.js"></script>
     <script src="js/slick.min.js"></script>
   </body>
