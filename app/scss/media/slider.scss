@@ -28,36 +28,26 @@
       right: 30px;
     }
   }
-  @media (max-width: 1183px){
-    .slider{
-      .card{
-        padding-left: 30px;
-        &__title{
-          font-size: 30px;
-          line-height: 35px;
-        }
-      }
-      .card__img{
-        img{
-          width: 330px;
-        }
-      }
-    }
-  }
-  @media (max-width: 1090px){
-    .slider{
-      max-width: 1100px;
-      .card{
-        padding-top: 44px;
-      }
-    }
-  }
-  @media (max-width: 1030px){
+  @media (max-width: 1080px){
     .img-left{
       display: none;
     }
     .img-right{
       display: none;
+    }
+  }
+  @media (max-width: 500px){
+    .img-right{
+      display: block;
+      z-index: 1;
+    }
+  }
+  @media (max-width: 400px){
+    .container{
+      .img-right{
+        width: 312px;
+        top: -454px;
+      }
     }
   }
 }

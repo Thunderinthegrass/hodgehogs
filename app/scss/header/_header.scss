@@ -42,6 +42,7 @@
   &__nav {
     margin-right: 132px;
     margin-top: 69px;
+    z-index: 2;
     .nav-list {
       display: flex;
     }
@@ -67,6 +68,7 @@
           transform: translateY(-50%);
           background-image: url(../../img/svg/dropdown-arrow.svg);
           transition: .2s;
+          cursor: pointer;
         }
       }
       &:last-child {
@@ -105,6 +107,7 @@
     align-items: center;
     margin-right: 80px;
     margin-top: 48px;
+    z-index: 2;
     &__link {
       display: flex;
       align-items: center;
@@ -129,6 +132,7 @@
     background-image: url(../img/svg/basket.svg);
     margin-right: 69px;
     margin-top: 64px;
+    z-index: 2;
     &__count {
       position: absolute;
       right: -10px;
@@ -172,6 +176,7 @@
     color: #70908b;
     margin-top: 18px;
     text-align: center;
+    padding: 0 15px;
   }
   &__btn-wrapper {
     text-align: center;
@@ -194,6 +199,7 @@
     border-radius: 40px;
     box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
     transition: 0.4s;
+    z-index: 3;
     &:hover {
       opacity: 0;
     }
