@@ -38,6 +38,10 @@
     align-items: center;
     transition: 0.3s;
     cursor: pointer;
+    &:hover{
+      background: $jupiter;
+      color: #ffffff;
+    }
     &_myself {
       padding-left: 26px;
       padding-right: 26px;
@@ -110,6 +114,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #70908b;
+    cursor: pointer;
     &::before {
       @extend %ba;
       left: 0;
@@ -156,7 +161,8 @@
       }
     }
     .textarea {
-      width: 1096px;
+      max-width: 1096px;
+      width: 100%;
       height: 108px;
       background: #f8f8f8;
       border-radius: 8px;

@@ -1,50 +1,174 @@
-.main{
+.main {
   @media (max-width: 1735px) {
     .container {
-      .img-left{
+      .img-left {
         width: 300px;
         top: -288px;
       }
     }
   }
-  @media (max-width: 1445px){
+  @media (max-width: 1445px) {
     .container {
-      .img-left{
+      .img-left {
         top: -550px;
       }
-      .img-right{
-        top: -560px;
+      .img-right {
+        top: -550px;
       }
     }
   }
-  @media (max-width: 1335px){
-    .arrow-left{
-      top: 60px;
+  @media (max-width: 1335px) {
+    .arrow-left {
+      top: 50px;
       left: 30px;
     }
-    .arrow-right{
+    .arrow-right {
       bottom: auto;
-      top: 60px;
+      top: 50px;
       right: 30px;
     }
   }
-  @media (max-width: 1080px){
-    .img-left{
+  @media (max-width: 1080px) {
+    .img-left {
       display: none;
     }
-    .img-right{
+    .img-right {
       display: none;
     }
   }
-  @media (max-width: 500px){
-    .img-right{
+  @media (max-width: 767px) {
+    .slider {
+      .card {
+        position: relative;
+        width: 500px;
+        padding-left: 30px;
+        padding-top: 44px;
+        padding-bottom: 30px;
+        margin-right: 16px;
+        &__img {
+          position: absolute;
+          right: -15px;
+        }
+        img {
+          width: 360px;
+        }
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .container{
+      padding-right: 0;
+    }
+    .slider {
+      .card {
+        width: 390px;
+        height: 318px;
+        &__title {
+          font-size: 30px;
+          line-height: 99.6%;
+        }
+        // &__sale {
+        //   width: 48px;
+        //   height: 21px;
+        //   font-size: 12px;
+        //   line-height: 14px;
+        // }
+        &__descr {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 141.9%;
+        }
+        &__img {
+          bottom: 60px;
+        }
+        img {
+          width: 230px;
+        }
+      }
+    }
+  }
+  @media (max-width: 492px) {
+    .slider {
+      padding-top: 60px;
+      .arrow-left {
+        display: none;
+      }
+      .arrow-right {
+        display: none;
+      }
+      .card {
+        width: 243px;
+        &__sale {
+          width: 48px;
+          height: 21px;
+          font-size: 12px;
+          line-height: 14px;
+          left: 30px;
+        }
+        &__descr {
+          font-size: 11px;
+          line-height: 141.9%;
+          width: 115px;
+        }
+        &__img {
+          right: -37px;
+        }
+        img {
+          width: 177px;
+        }
+        .to-basket-btn {
+          clip-path: polygon(100% 30%, 35% 100%, 100% 100%);
+          svg {
+            bottom: 0;
+            right: 0;
+          }
+        }
+        .add-info-btn {
+          display: none;
+        }
+        .add-info {
+          display: flex;
+          opacity: 1;
+          height: auto;
+          width: auto;
+          background: transparent;
+          color: $text-color;
+          padding: 0;
+          top: 12px;
+          right: 20px;
+          span {
+            font-size: 10px;
+            line-height: 159.9%;
+          }
+          .graft{
+              width: 15px;
+              height: 14px;
+              margin-right: 3px;
+          }
+          .is-graft{
+            margin-right: 18px;
+          }
+          .like{
+            width: 15px;
+            height: 15px;
+            margin-right: 3px;
+          }
+          svg {
+            fill: $text-color;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .img-right {
       display: block;
       z-index: 1;
     }
   }
-  @media (max-width: 400px){
-    .container{
-      .img-right{
+  @media (max-width: 400px) {
+    .container {
+      .img-right {
         width: 312px;
         top: -454px;
       }

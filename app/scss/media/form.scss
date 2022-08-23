@@ -1,0 +1,135 @@
+.form-wrapper {
+  @media (max-width: 650px) {
+    .container {
+      padding-left: 0;
+    }
+  }
+}
+.form {
+  @media (max-width: 1235px) {
+    &__title {
+      font-size: 37px;
+      text-align: center;
+    }
+    &__bottom-inputs {
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+      input {
+        max-width: 100%;
+        width: 100%;
+      }
+      .phone {
+        margin: 10px 0;
+      }
+    }
+  }
+  @media (max-width: 1177px) {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__checkbox-wrapper {
+      margin-right: 0;
+    }
+    &__radio-wrapper {
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 1177px) {
+    &__title {
+      font-size: 27px;
+      line-height: 31px;
+    }
+  }
+  @media (max-width: 710px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+  }
+  @media (max-width: 610px) {
+    padding-bottom: 133px;
+    margin-bottom: 91px;
+    &__checkbox-wrapper {
+      flex-direction: column;
+      align-items: center;
+      .checkbox-label_myself {
+        margin: 0;
+      }
+      .checkbox-label_kids {
+        margin: 10px 0;
+      }
+    }
+    &__bottom-inputs{
+      margin-bottom: 10px;
+    }
+    &__btn{
+      bottom: 39px;
+      width: 280px;
+
+    }
+    .hover-mask{
+      bottom: 39px;
+      width: 280px;
+      
+    }
+  }
+  @media (max-width: 470px) {
+    &__title {
+      font-size: 24px;
+      line-height: 29px;
+      text-align: left;
+    }
+  }
+  @media (max-width: 430px){
+    &__top{
+      margin-top: 25px;
+      margin-bottom: 16px;
+    }
+    &__radio-wrapper{
+      display: flex;
+      flex-direction: column;
+      .radio-row{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+      label{
+        margin-bottom: 14px;
+      }
+    }
+  }
+  @media (max-width: 375px){
+    &__top{
+      align-items: start;
+    }
+    &__checkbox-wrapper{
+      align-items: start;
+    }
+  }
+}
+@media (max-width: 430px){
+  .stock{
+    margin-bottom: 50px;
+    .container{
+      align-items: start;
+    }
+    .reminder{
+      padding-left: 0;
+      margin-bottom: 27px;
+      .count{
+        display: inline-block;
+      }
+      span{
+        display: block;
+      }
+      &::before{
+        left: 2px;
+        top: -43px;
+      }
+    }
+    &__duration{
+      text-align: left;
+    }
+  }
+}

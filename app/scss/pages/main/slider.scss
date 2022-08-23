@@ -1,8 +1,8 @@
 .main{
     .container{
       position: relative;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
       .img-left {
         position: absolute;
         left: 0;
@@ -220,12 +220,16 @@
   }
   .arrow-left {
     position: absolute;
+    width: 24px;
+    height: 24px;
     bottom: 181px;
     left: -59px;
     cursor: pointer;
   }
   .arrow-right {
     position: absolute;
+    width: 24px;
+    height: 24px;
     bottom: 181px;
     right: -59px;
     transform: rotate(180deg);

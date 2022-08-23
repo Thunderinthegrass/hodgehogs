@@ -1,0 +1,112 @@
+.footer{
+  @media (max-width: 1330px) {
+    &__nav{
+      margin-right: 50px;
+    }
+    &__social{
+      margin-right: 50px;
+    }
+    .nav-item{
+      margin-right: 45px;
+    }
+  }
+  @media (max-width: 1130px){
+    .logo{
+      left: 30px;
+    }
+    &__phone{
+      margin-right: 30px;
+    }
+    &__nav{
+      margin-right: 30px;
+    }
+    &__social{
+      margin-right: 30px;
+    }
+    .nav-item{
+      margin-right: 25px;
+    }
+    .copyright{
+      left: 30px;
+    }
+  }
+  @media (max-width: 960px){
+    padding-right: 84px;
+    .nav-item{
+      margin-right: 20px;
+    }
+    &__social{
+      position: absolute;
+      right: 24px;
+      margin-right: 0;
+      flex-direction: column;
+      width: 30px;
+      &-item{
+        &:nth-child(2){
+          margin: 22px 0;
+        }
+      }
+    }
+    &__phone{
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 845px){
+    .logo{
+      left: 20px;
+    }
+  }
+  @media (max-width: 820px){
+    flex-direction: column;
+    .logo{
+      top: 35px;
+    }
+    &__nav{
+      position: absolute;
+      margin-right: 0;
+      top: 30px;
+      right: 80px;
+    }
+    &__phone{
+      position: absolute;
+      top: 85px;
+      right: 150px;
+    }
+  }
+  @media (max-width: 582px){
+    height: 270px;
+    justify-content: start;
+    align-items: flex-start;
+    padding-right: 54px;
+    &__nav{
+      position: static;
+      padding-top: 123px;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    &__phone{
+      position: static;
+      margin-left: 20px;
+    }
+    &__social{
+      top: 46px;
+    }
+  }
+  @media (max-width: 432px){
+    height: 510px;
+    &__nav{
+      padding-top: 153px;
+      margin-bottom: 24px;
+    }
+    .nav-list{
+      flex-direction: column;
+    }
+    .nav-item{
+      margin-bottom: 30px;
+    }
+  }
+  .copuright{
+    left: 20px;
+    bottom: 36px;
+  }
+}

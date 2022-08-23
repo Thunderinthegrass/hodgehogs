@@ -57,7 +57,6 @@
   }
   &__phone {
     margin-right: 60px;
-    // margin-top: 74px;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -67,13 +66,19 @@
   &__social {
     display: flex;
     justify-content: space-between;
-    // margin-top: 71px;
     margin-right: 76px;
     width: 136px;
     &-item {
       svg {
         width: 30px;
         height: 30px;
+        fill: #ffffff;
+        transition: .3s;
+      }
+      &:hover{
+        svg{
+          fill: $text-color;
+        }
       }
     }
   }
